@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_put_uint.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: koimai <koimai@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: koimai <koimai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 00:04:39 by koimai            #+#    #+#             */
-/*   Updated: 2023/10/23 10:11:55 by koimai           ###   ########.fr       */
+/*   Updated: 2023/10/24 16:38:35 by koimai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_uitoa(unsigned int n)
 	result[len] = '\0';
 	while (n != 0)
 	{
-		result[len - 1] = n % 10 + ('a' - 'A');
+		result[len - 1] = n % 10 + '0';
 		n /= 10;
 		len--;
 	}

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: koimai <koimai@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: koimai <koimai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 17:50:03 by koimai            #+#    #+#             */
-/*   Updated: 2023/10/23 11:00:53 by koimai           ###   ########.fr       */
+/*   Updated: 2023/10/24 18:45:15 by koimai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,12 +58,15 @@ int	ft_printf(const char *str, ...)
 	return ((int)len);
 }
 
-#include <stdio.h>
-int	main(void)
-{
-	int	len;
+// #include <stdio.h>
+// int	main(void)
+// {
+// 	int	len;
 
-	len = ft_printf("%%d:%d | %%d:%d\n", 123, -8450);
-	printf("size:[ %d ]\n", len);
-	return (0);
-}
+// 	printf("\n");
+// 	len = ft_printf("%x", 1000);
+// 	printf("size:[ %d ]\n", len);
+// 	len = printf("%x", 1000);
+// 	printf("size:[ %d ]\n", len);
+// 	return (0);
+// }
