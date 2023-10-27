@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_utils.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: koimai <koimai@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: koimai <koimai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 18:06:11 by koimai            #+#    #+#             */
-/*   Updated: 2023/10/23 10:09:45 by koimai           ###   ########.fr       */
+/*   Updated: 2023/10/27 17:31:53 by koimai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-size_t	ft_put_char(char c)
+size_t	ft_put_char(int c)
 {
 	write(1, &c, 1);
 	return (1);
@@ -52,4 +52,3 @@ size_t	ft_put_percent(void)
 	write(1, "%", 1);
 	return (1);
 }
-

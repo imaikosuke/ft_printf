@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: koimai <koimai@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: koimai <koimai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 17:57:06 by koimai            #+#    #+#             */
-/*   Updated: 2023/10/23 10:05:41 by koimai           ###   ########.fr       */
+/*   Updated: 2023/10/27 17:31:59 by koimai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 size_t	ft_format(va_list args, const char format);
 char	*ft_itoa(int n);
-size_t	ft_put_char(char c);
+size_t	ft_put_char(int c);
 size_t	ft_put_str(char *str);
 size_t	ft_put_nbr(int n);
 size_t	ft_put_percent(void);
