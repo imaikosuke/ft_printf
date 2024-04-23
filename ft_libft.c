@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_libft.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: koimai <koimai@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: koimai <koimai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 23:38:00 by koimai            #+#    #+#             */
-/*   Updated: 2023/10/22 23:38:10 by koimai           ###   ########.fr       */
+/*   Updated: 2024/04/23 17:45:48 by koimai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static size_t	count_num(int n, long abs_n)
+static size_t	ft_count_num(int n, long abs_n)
 {
 	size_t	count;
 
@@ -42,7 +42,7 @@ char	*ft_itoa(int n)
 	abs_n = n;
 	if (abs_n < 0)
 		abs_n = -abs_n;
-	len = count_num(n, abs_n);
+	len = ft_count_num(n, abs_n);
 	res = (char *)malloc((len + 1) * sizeof(char));
 	if (!res)
 		return (NULL);
