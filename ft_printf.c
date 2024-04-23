@@ -6,7 +6,7 @@
 /*   By: koimai <koimai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 17:50:03 by koimai            #+#    #+#             */
-/*   Updated: 2023/10/27 17:33:26 by koimai           ###   ########.fr       */
+/*   Updated: 2024/04/23 17:45:45 by koimai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,17 +56,4 @@ int	ft_printf(const char *str, ...)
 	}
 	va_end(args);
 	return ((int)len);
-}
-
-#include <stdio.h>
-int	main(void)
-{
-	int	len;
-
-	printf("\n");
-	len = ft_printf("[%c] [%c] [%c]", '0', 0, '0');
-	printf("size:[ %d ]\n", len);
-	len = printf("[%c] [%c] [%c]", '0', 0, '0');
-	printf("size:[ %d ]\n", len);
-	return (0);
 }
