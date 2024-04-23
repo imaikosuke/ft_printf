@@ -6,13 +6,13 @@
 /*   By: koimai <koimai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 00:04:39 by koimai            #+#    #+#             */
-/*   Updated: 2023/10/24 16:38:35 by koimai           ###   ########.fr       */
+/*   Updated: 2024/04/23 18:44:46 by koimai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-size_t	ft_num_len(unsigned int n)
+static size_t	ft_num_len(unsigned int n)
 {
 	size_t	len;
 

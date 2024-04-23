@@ -6,7 +6,7 @@
 /*   By: koimai <koimai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 18:06:11 by koimai            #+#    #+#             */
-/*   Updated: 2023/10/27 17:31:53 by koimai           ###   ########.fr       */
+/*   Updated: 2024/04/23 18:44:19 by koimai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,20 +20,20 @@ size_t	ft_put_char(int c)
 
 size_t	ft_put_str(char *str)
 {
-	size_t	i;
+	size_t	len;
 
 	if (!str)
 	{
 		write(1, "(null)", 6);
 		return (6);
 	}
-	i = 0;
-	while (str[i] != '\0')
+	len = 0;
+	while (str[len] != '\0')
 	{
-		ft_put_char(str[i]);
-		i++;
+		ft_put_char(str[len]);
+		len++;
 	}
-	return (i);
+	return (len);
 }
 
 size_t	ft_put_nbr(int n)
