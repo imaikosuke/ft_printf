@@ -6,13 +6,13 @@
 /*   By: koimai <koimai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 09:34:27 by koimai            #+#    #+#             */
-/*   Updated: 2023/10/24 18:44:09 by koimai           ###   ########.fr       */
+/*   Updated: 2024/05/09 14:47:02 by koimai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-size_t	ft_hex_len(unsigned int n)
+static size_t	ft_hex_len(unsigned int n)
 {
 	size_t	len;
 
@@ -27,7 +27,7 @@ size_t	ft_hex_len(unsigned int n)
 	return (len);
 }
 
-size_t	ft_put_hex_util(unsigned int n, const char format)
+static size_t	ft_put_hex_util(unsigned int n, const char format)
 {
 	size_t	len;
 

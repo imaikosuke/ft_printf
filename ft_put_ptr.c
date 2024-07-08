@@ -6,13 +6,13 @@
 /*   By: koimai <koimai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 00:50:03 by koimai            #+#    #+#             */
-/*   Updated: 2023/10/24 16:36:38 by koimai           ###   ########.fr       */
+/*   Updated: 2024/07/08 17:39:01 by koimai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-size_t	ft_ptr_len(uintptr_t n)
+static size_t	ft_ptr_len(uintptr_t n)
 {
 	size_t	len;
 
@@ -25,7 +25,7 @@ size_t	ft_ptr_len(uintptr_t n)
 	return (len);
 }
 
-size_t	ft_put_ptr_util(uintptr_t n)
+static size_t	ft_put_ptr_util(uintptr_t n)
 {
 	size_t	len;
 

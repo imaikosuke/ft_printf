@@ -6,13 +6,13 @@
 /*   By: koimai <koimai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 17:50:03 by koimai            #+#    #+#             */
-/*   Updated: 2024/04/23 18:51:20 by koimai           ###   ########.fr       */
+/*   Updated: 2024/05/09 14:49:51 by koimai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-size_t	ft_format(va_list args, const char format)
+static size_t	ft_format(va_list args, const char format)
 {
 	size_t	len;
 
